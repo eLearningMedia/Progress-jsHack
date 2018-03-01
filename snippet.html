@@ -1,0 +1,29 @@
+<script type="text/javascript">
+  function progressBar() {
+    //change the gif that shows progress to be visible
+    var barra = document.getElementById('newFile_loading');
+    barra.style.display = 'block';
+  }
+  Event.observe(document, "dom:loaded", function() {
+    //is this a drag & drop page? if it is, there is a dropzone element somewhere
+    var drop = document.getElementsByClassName('dropzone');
+    if (drop.length > 0) {
+      if (document.uploadAssignmentForm) {
+        //first case: assignment upload page
+        var formulario2 = document.uploadAssignmentForm;
+        var boton = formulario2.getElementsByClassName('submit button-1')[0];
+        boton.addEventListener('click', progressBar, true);
+      }
+      if (document.fileUpload) {
+        //second: file upload to content manager
+        var formulario = document.fileUpload;
+        formulario.addEventListener('submit', progressBar, true);
+      }
+      if (document.the_form) {
+        //third: file upload onto an item in a content area
+        var formulario = document.the_form;
+        formulario.addEventListener('submit', progressBar, true);
+      }
+    }
+  });
+</script>

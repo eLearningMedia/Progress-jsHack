@@ -1,0 +1,11 @@
+<hackpackage>
+  <name>Progress bar</name>
+  <identifier>PROGRESS</identifier>
+  <description>Shows progress bar in drag and drop uploads</description>
+  <developerName>Ester Muñoz</developerName>
+  <developerInstitution>eLearning media</developerInstitution>
+  <developerURL>www.elearningmedia.es</developerURL>
+  <hook>jsp.topFrame.start</hook>
+  <restrictions/>
+  <resources/>
+</hackpackage>
