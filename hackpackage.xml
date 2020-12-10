@@ -1,11 +1,12 @@
 <hackpackage>
   <name>Progress bar</name>
-  <identifier>PROGRESS</identifier>
-  <description>Shows progress bar in drag and drop uploads</description>
+  <identifier>FAKE-PROGRESS</identifier>
+  <description>Show a progress bar (animated GIF) while the assignment files load</description>
   <developerName>Ester Muñoz</developerName>
-  <developerInstitution>eLearning media</developerInstitution>
-  <developerURL>www.elearningmedia.es</developerURL>
-  <hook>jsp.topFrame.start</hook>
+  <developerInstitution>eLearning Media</developerInstitution>
+  <developerEmail>emunoz@elearningmedia.es</developerEmail>
+  <hook>tag.learningSystemPage.start</hook>
   <restrictions/>
   <resources/>
+  <priority>0</priority>
 </hackpackage>
